@@ -1,13 +1,11 @@
-import React  from 'react'
+import React  from 'react';
 
 
-import  Prop  from './Prop'
-import Routing from './Routing/Routes';
-
+import  Prop  from './Prop';
 
 
 
-function MainFile(){
+function Props2(){
 
 
 
@@ -15,9 +13,9 @@ function MainFile(){
 
   return(
     <>
-    <Routing/>
    
-    {/* <Prop 
+   
+    <Prop 
       title='Movie 1' 
       text='hello worls is best' 
       link='google' 
@@ -37,7 +35,7 @@ function MainFile(){
       text='hello ' 
       link='google4' 
       src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSx_nyrTbM4iuDpvtCOccijgz8iDcjJTLUaa0VT8KpJ&s'/>
-   */}
+  
    
     </>
   )  
@@ -45,7 +43,7 @@ function MainFile(){
 }
 
 
-export default MainFile ;
+export default Props2 ;
 
 
 

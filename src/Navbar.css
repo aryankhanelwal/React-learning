@@ -1,0 +1,8 @@
+#firstone:hover{
+color: purple;
+
+}
+
+#firstone:active{
+    color: red;
+}

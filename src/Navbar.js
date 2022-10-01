@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 
-
+import {useNavigate} from 'react-router-dom';
+import './Navbar.css';
 
 
 function Navbar(props) {
 
-
+  const Navigate = useNavigate()
   const [mode, setMode] = useState('light')
 
 
@@ -33,13 +34,13 @@ function Navbar(props) {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <a className="nav-link active" style={{ color: mode === 'light' ? 'black' : "white" }} aria-current="page" href="#">Home</a>
+              <a className="nav-link active" id="firstone" style={{  cursor:'pointer'}} aria-current="page" onClick={() => Navigate('/First')}>Home</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" style={{ color: mode === 'light' ? 'black' : "white" }} href="#">Menu</a>
+              <a className="nav-link" style={{  cursor:'pointer'}} onClick={() => Navigate('/Menu')}>Menu</a>
             </li>
             <li className="nav-item">
-              <a style={{ color: mode === 'light' ? 'black' : "white" }} className="nav-link" href="#" role="button" >
+              <a style={{  cursor:'pointer'}} className="nav-link"onClick={()=>Navigate('/Cart')} role="button" >
                 Cart
               </a>
 

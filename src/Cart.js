@@ -3,7 +3,7 @@ import React from "react";
 
 
 
-function Count(props) {
+function Cart(props) {
        
     const[count,setCount ]= useState(0)
     // const inc = ()=>{
@@ -28,5 +28,5 @@ function Count(props) {
   }
   
   
-export default Count
+export default Cart
 
