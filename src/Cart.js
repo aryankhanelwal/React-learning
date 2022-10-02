@@ -1,11 +1,12 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import React from "react";
-
+import RemoteData from "./RemoteData";
 
 
 function Cart(props) {
        
     const[count,setCount ]= useState(0)
+    
     // const inc = ()=>{
     //     setCount(count+1)
     //     console.log({count})
@@ -16,6 +17,7 @@ function Cart(props) {
     //     console.log({count})
 
     // } 
+       
 
     return (
       <div>
@@ -23,6 +25,8 @@ function Cart(props) {
         <button onClick={()=> setCount(count+1)}> Inc  </button>
         <button onClick={()=> setCount(count-1)}>dec</button>
     
+
+        <RemoteData/>
       </div>
     );
   }

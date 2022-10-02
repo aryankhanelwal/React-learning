@@ -46,6 +46,12 @@ function Navbar(props) {
 
             </li>
             <li className="nav-item">
+              <a style={{  cursor:'pointer'}} className="nav-link"onClick={()=>Navigate('/Todo')} role="button" >
+                Todo
+              </a>
+
+            </li>
+            <li className="nav-item">
               <button className="btn btn-outline-success" onClick={changeMode}>{mode === 'light' ? 'Dark' : 'Light'}</button>
 
             </li>

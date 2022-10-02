@@ -5,6 +5,7 @@ import Navbar from '../Navbar'
 import Menu from '../Menu'
 import Cart from '../Cart'
 import Prop2 from '../Props2'
+import Todo from '../Todo'
 function Routing(){
 
 
@@ -23,6 +24,7 @@ function Routing(){
      
      {/* for invalid route */}
         <Route path='*' element={<Home/>}/>
+        <Route path='/Todo' element={<Todo/>}/>
 
         </Routes>
         
