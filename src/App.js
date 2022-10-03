@@ -1,21 +1,27 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 
 import Prop from './Prop'
 import Routing from './Routing/Routes';
+import AuthRoutes from './Routing/AuthRoutes';
+
 
 
 
 
 function MainFile() {
 
-
+const[Auth,setAuth] = useState(true)
 
 
 
   return (
     <>
-      <Routing />
+
+    { Auth == false?
+    <AuthRoutes/>:
+      <Routing/>
+    }
 
       {/* <Prop 
       title='Movie 1' 
