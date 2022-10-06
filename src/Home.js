@@ -1,27 +1,30 @@
 import React from "react";
 import Routing from './Routing/Routes';
-import {useNavigate} from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
+import './Home.css';
 
 
 
 
-
-function Home(){
+function Home() {
     const Navigate = useNavigate()
     return (
         <>
-        <h1>This is Home Comp.</h1>
-        <a onClick={()=>Navigate('/First/Prop')}>this is a link to google</a>
+            <header >
+            <div class="overlay">
+    <section id="home">
+        <h1 class="h-primary">Welcome to <br/><span className="word">Spoon & Forks</span></h1>
+        <br/>
+        <p>Here We serve you best Dishes </p>
+        <button class="btn1">Order Now</button>
+    </section>
+</div>
+
+            </header>
+
         </>
     )
 }
 
 
-function About(){
-    return (<h1>This is about Comp.</h1>)
-}
-
-
-
-
-export  {Home, About}
+export default Home

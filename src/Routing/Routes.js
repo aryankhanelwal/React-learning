@@ -1,6 +1,6 @@
 import React from 'react'
 import { Routes , Route} from 'react-router-dom'
-import { Home } from '../Home'
+import Home  from '../Home'
 import Navbar from '../Navbar'
 import Menu from '../Menu'
 import Cart from '../Cart'
@@ -13,8 +13,8 @@ function Routing(){
 
     return(
         <>
-        <Navbar title="Foodish"/>
-        <input placeholder='Enter your color' value={color} onChange={(e)=>{setColor(e.target.value)}} ></input>
+        <Navbar title="Spoon & Forks"/>
+        
         <Routes>
         {/*for universal Route*/}
         <Route path='/' element={<Home/>}/>

@@ -40,13 +40,13 @@ function Navbar(props) {
               <a className="nav-link" style={{  cursor:'pointer'}} onClick={() => Navigate('/Menu')}>Menu</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" style={{  cursor:'pointer'}} onClick={() => Navigate('/Login')}>Login</a>
-            </li>
-            <li className="nav-item">
               <a style={{  cursor:'pointer'}} className="nav-link"onClick={()=>Navigate('/Cart')} role="button" >
                 Cart
               </a>
 
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" style={{  cursor:'pointer'}} onClick={() => Navigate('/Login')}>Login</a>
             </li>
             <li className="nav-item">
               <a style={{  cursor:'pointer'}} className="nav-link"onClick={()=>Navigate('/Todo')} role="button" >

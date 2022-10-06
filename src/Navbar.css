@@ -1,3 +1,4 @@
+
 #firstone:hover{
 color: purple;
 
@@ -5,4 +6,14 @@ color: purple;
 
 #firstone:active{
     color: red;
+}
+
+.navbar{
+    position:fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    overflow: hidden;
+  
 }

@@ -1,0 +1,51 @@
+* {
+    padding: 0;
+    margin: 0;
+
+    box-sizing: border-box;
+
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+header {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url(https://pixelz.cc/wp-content/uploads/2018/10/pizza-uhd-4k-wallpaper.jpg);
+    background-position: center;
+    background-size: cover;
+    opacity: 0.8;
+    height: 80vh;
+}
+
+.Mid {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+#home {
+    display: flex;
+
+    text-align: center;
+    flex-direction: column;
+    padding: 220px 200px;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+.overlay {
+    background: rgb(0, 0, 0, -5);
+    height: 100vh;
+}
+
+.btn1 {
+    margin-top: 30px;
+    cursor: pointer;
+    border-radius: 25px;
+    padding: 1rem 2rem;
+}
+.word{
+    text-decoration: underline;
+    font-size: 60px;
+}
